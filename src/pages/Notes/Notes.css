@@ -1,0 +1,156 @@
+.notes-container {
+    background-color: #eef7f7;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notes-header {
+    margin-bottom: 40px;
+}
+
+.notes-header  h1 {
+    font-size: 48px;
+    color: #37513b;
+    margin-bottom: 24px;
+}
+
+.notes-header :nth-child(2) {
+    font-size: 20px;
+    color: #37513b;
+    margin-bottom: 16px;
+}
+
+.notes-header :nth-child(3) {
+    font-size: 20px;
+    color: #37513b;
+    margin-bottom: 16px;
+}
+
+.user-input {
+    text-align: center;
+    width: 60%;
+    height: 250px;
+    font-size: 24px;
+    color: #37513b;
+    background-color: #dfe4e4;
+    border: none;
+    border-radius: 24px;
+    box-shadow: 9px 11px 18px -10px #5b310b;
+
+    margin-bottom: 40px;
+}
+
+.button-container {
+    margin-bottom: 40px;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.button-container button {
+    width: 45%;
+    font-size: 20px;
+    color: #eef7f7;
+    background-color: #37513b;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+
+    cursor: pointer;
+}
+
+.button-container button.addNote-btn {
+    width: 55%;
+    margin-left: 25%;
+}
+
+
+.stickers-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    margin-bottom: 64px;
+}
+
+.stickers-container div {
+    position: relative;
+    min-height: 250px;
+    width: 30%;
+    color: #37513b;
+    background-color: #dfe4e4;
+    border-radius: 12px;
+    box-shadow: 9px 11px 18px -10px #5b310b;
+    padding: 20px;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stickers-container div button {
+    position: absolute;
+    bottom: 12px;
+
+    color: #eef7f7;
+    background-color: #37513b;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+
+    cursor: pointer;
+}
+
+/* Tablet Display Setting */
+@media screen and (max-width: 1000px) {
+    .button-container {
+        width: 40%;
+    }
+
+    .stickers-container div {
+        width: 45%;
+    }
+}
+
+/* Phone Display Setting */
+@media screen and (max-width: 400px) {
+    .notes-container {
+        padding: 20px;
+    }
+    .notes-header  h1 {
+        font-size: 32px;
+        margin-top: 24px;
+    }
+
+    .notes-header :nth-child(2) {
+        font-size: 18px;
+    }
+    .notes-header :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .user-input {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .button-container {
+        width: 80%;
+    }
+
+    .button-container button.addNote-btn {
+        width: 50%;
+    }
+
+    .stickers-container div {
+        width: 100%;
+    }
+}
